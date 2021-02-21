@@ -13,5 +13,5 @@ server:
 
 database: # for database see (configure database section)
   dbname: qis
-  connection: mongodb://root:asds@localhost:27017
+  connection: mongodb://anig:380379@localhost:27017
 
