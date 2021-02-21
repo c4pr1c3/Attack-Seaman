@@ -48,7 +48,7 @@ export const RelationshipList = (props: any) => {
         <TextField source="relationship_type" />
 
         <ReferenceField
-          label="AttackPattern"
+          label="source_ref"
           source="source_ref"
           reference="attackPatterns"
         >
@@ -56,7 +56,7 @@ export const RelationshipList = (props: any) => {
         </ReferenceField>
 
         <ReferenceField
-          label="AttackPattern"
+          label="target_ref"
           source="target_ref"
           reference="attackPatterns"
         >
@@ -93,6 +93,7 @@ const RelationshipForm = (props: any) => {
         label="target_ref"
         source="target_ref"
         reference="attackPatterns"
+        filterToQuery={(searchText: any) => ({ name: searchText })}
       >
         <AutocompleteInput
           source="name"
